@@ -164,6 +164,10 @@ input:checked + .slider:before {
   padding: 10px;
   border: none;
   margin-top: 30px;
+  border: solid 1px transparent; /* Forma reducida */
+  /*border: none;
+  border-width: 1px;
+  border-style: solid;*/
 }
 
 .btn-white:hover {
@@ -182,6 +186,9 @@ input:checked + .slider:before {
     hsl(236, 72%, 79%) 0%,
     hsl(237, 63%, 64%) 100%
   );
+  border: unset;
+  border-width: 1px;
+  border-style: solid;
 }
 
 .btn-dark:hover {
@@ -203,15 +210,9 @@ input:checked + .slider:before {
 
 @media only screen and (max-width: 600px) {
   .container {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
   .card {
     margin-bottom: 50px;
-  }
-  .attribution {
-    word-break: break-all;
   }
 }
